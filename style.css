@@ -4,6 +4,7 @@
   --blue-color: #00bcd4;
   --white-color: #fff;
   --dark-gray-color: #333;
+  --black-color: #000;
 }
 
 * {
@@ -20,7 +21,7 @@
   right: 30px;
   width: 50px;
   height: 50px;
-  background: #000 url(images/menu.png);
+  background: var(--black-color) url(images/menu.png);
   background-size: 30px;
   background-position: center;
   background-repeat: no-repeat;
@@ -29,7 +30,7 @@
 }
 
 .toggle.active {
-  background: #000 url(images/close.png);
+  background: var(--black-color) url(images/close.png);
   background-size: 25px;
   background-position: center;
   background-repeat: no-repeat;
@@ -64,7 +65,8 @@ section {
   object-fit: cover;
 }
 
-.banner .contentBox {
+.banner .contentBox,
+.sidebar {
   position: absolute;
   top: 0;
   right: 0;
@@ -120,4 +122,46 @@ section {
   text-decoration: none;
   font-weight: 500;
   letter-spacing: 2px;
+}
+
+/* ----------sidebar------------- */
+.sidebar {
+  position: fixed;
+  background: var(--black-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  padding: 40px;
+  z-index: 100;
+  right: -100%;
+}
+
+.sidebar .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sidebar .menu li {
+  list-style: none;
+}
+
+.sidebar .menu li a {
+  color: var(--white-color);
+  text-decoration: none;
+  font-size: 2em;
+  margin: 10px 0;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.sidebar .menu li a:hover {
+  color: var(--blue-color);
+}
+
+.sidebar.active {
+  right: 0;
 }
