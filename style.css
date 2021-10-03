@@ -124,6 +124,30 @@ section {
   letter-spacing: 2px;
 }
 
+/* ------------social------------- */
+.social {
+  position: absolute;
+  left: 100px;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social li {
+  margin-right: 10px;
+  list-style: none;
+}
+
+.social li img {
+  transform: scale(0.5);
+  opacity: 0.7;
+}
+
+.social li img:hover {
+  opacity: 1;
+}
+
 /* ----------sidebar------------- */
 .sidebar {
   position: fixed;
