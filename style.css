@@ -148,6 +148,65 @@ section {
   opacity: 1;
 }
 
+/* --------------about-------------- */
+.title {
+  width: 100%;
+  text-align: center;
+}
+
+.title h2 {
+  position: relative;
+  color: var(--blue-color);
+  font-size: 1.8em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.title p {
+  max-width: 700px;
+  padding-top: 20px;
+  display: inline-block;
+  color: var(--white-color);
+}
+
+.title h2::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  width: 60px;
+  height: 4px;
+  background: var(--blue-color);
+}
+
+.about {
+  background: var(--black-color);
+}
+
+.about .content {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about .content .textBox {
+  min-width: 49%;
+  width: 49%;
+}
+
+.about .content .textBox p {
+  color: var(--white-color);
+}
+
+.about .content .imgBox {
+  margin-left: 40px;
+}
+
+.about .content .imgBox img {
+  max-width: 100%;
+}
+
 /* ----------sidebar------------- */
 .sidebar {
   position: fixed;
