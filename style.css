@@ -212,6 +212,7 @@ section {
 .services .title p {
   color: var(--black-color);
 }
+
 .services .content {
   display: flex;
   justify-content: center;
@@ -261,6 +262,66 @@ section {
 
 .services .content .servicesBox:hover p {
   color: var(--white-color);
+}
+
+/* -----------------work------------------- */
+.work .title p {
+  color: var(--black-color);
+  margin-bottom: 20px;
+}
+
+.work .content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.work .content .workBox {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  transition: 0.5s;
+  text-align: center;
+}
+
+.work .content .workBox .imgBox,
+.work .content .workBox .textBox {
+  position: absolute;
+  top: 0;
+  letter-spacing: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work .content .workBox .imgBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.work .content .workBox .textBox {
+  background: var(--black-color);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.work .content .workBox:hover .textBox {
+  opacity: 1;
+}
+
+.work .content .workBox:hover .textBox h3 {
+  color: var(--white-color);
+  text-transform: var(--white-color);
+  letter-spacing: 1px;
+  font-size: 1em;
 }
 
 /* ----------sidebar------------- */
