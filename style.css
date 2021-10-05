@@ -324,6 +324,68 @@ section {
   font-size: 1em;
 }
 
+/* -------------------contact---------------- */
+.contact {
+  background: var(--black-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact .contactForm {
+  margin-top: 30px;
+}
+
+.contact .contactForm .row {
+  width: 100%;
+  display: flex;
+}
+
+.contact .contactForm .row .col50 {
+  width: 50%;
+  margin: 10px;
+}
+
+.contact .contactForm .row .col100 {
+  width: 100%;
+  margin: 10px;
+  text-align: center;
+}
+
+.contact .contactForm .row input,
+.contact .contactForm .row textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: #111;
+  color: var(--white-color);
+  font-size: 16px;
+  resize: none;
+}
+
+.contact .contactForm .row textarea {
+  height: 100px;
+}
+
+.contact .contactForm .row input[type='submit'] {
+  background: var(--blue-color);
+  color: var(--white-color);
+  padding: 10px 30px;
+  display: inline-block;
+  font-weight: 500;
+  letter-spacing: 2px;
+  cursor: pointer;
+  max-width: 150px;
+}
+
+.contact .contactForm .row .btn:hover {
+  background: var(--black-color);
+  color: var(--blue-color);
+  transition: 0.5s;
+}
+
 /* ----------sidebar------------- */
 .sidebar {
   position: fixed;
