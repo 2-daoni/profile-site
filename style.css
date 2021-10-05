@@ -427,3 +427,64 @@ section {
 .sidebar.active {
   right: 0;
 }
+
+/* ------------미디어쿼리------------- */
+@media (max-width: 991px) {
+  .banner .imgSlider {
+    display: none;
+  }
+  .banner .contentBox,
+  .sidebar {
+    width: 100%;
+    padding: 40px;
+  }
+  .toggle {
+    right: 40px;
+  }
+  .social {
+    left: 40px;
+  }
+  section {
+    padding: 40px;
+  }
+  .about .content {
+    flex-direction: column;
+    margin-top: 10;
+  }
+  .about .content .textBox {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .about .content .imgBox {
+    margin-left: 0;
+  }
+  .services .content .servicesBox {
+    padding: 30px 20px;
+    max-width: 340px;
+    margin: 10px;
+  }
+  .contact .contactForm {
+    width: 100%;
+  }
+  .contact .contactForm .row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contact .contactForm .row .col50 {
+    width: 100%;
+  }
+  .sidebar ul li a {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 500px) {
+  .services .content .servicesBox,
+  .work .content .workBox {
+    padding: 30px 20px;
+    max-width: 100%;
+    width: 100%;
+    margin: 10px 0;
+  }
+}
